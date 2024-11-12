@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint4;
+﻿using System.Runtime.CompilerServices;
+using tyuiu.cources.programming.interfaces.Sprint4;
 namespace Tyuiu.GalimovaAS.Sprint4.Task3.V29.Lib
 {
     public class DataService : ISprint4Task3V29
@@ -8,18 +9,16 @@ namespace Tyuiu.GalimovaAS.Sprint4.Task3.V29.Lib
             int rows = array.GetUpperBound(0) + 1;
             int columns = array.Length / rows;
 
-            int res = 1;
-            for (int i = 0; i < rows; i++)
+            int count = 1;
+            int columnToSum = 1;
+            for (int i = 0; i < columns; i++)
             {
-                for (int j = 0; j < columns; j++)
+                for (int j = 0; j < rows; j++)
                 {
-                    if (j == 1)
-                    {
-                        res *= array[i, j];
-                    }
                 }
+                count *= array[i, 0];
             }
-            return res;
+            return count;
         }
     }
 }

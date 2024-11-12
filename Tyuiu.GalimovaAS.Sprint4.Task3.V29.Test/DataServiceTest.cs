@@ -9,7 +9,8 @@ namespace Tyuiu.GalimovaAS.Sprint4.Task3.V29.Test
         {
             DataService ds = new DataService();
 
-            int[,] mas2 = new int[5, 5] { { 9, 9, 8, 6, 9 },
+            int[,] mas2 = new int[5, 5] {
+                { 9, 9, 8, 6, 9 },
                 { 5, 8, 8, 8, 7 },
                 { 6, 5, 9, 7, 9 },
                 { 7, 7, 9, 7, 8 },
