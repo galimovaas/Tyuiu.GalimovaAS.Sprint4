@@ -7,15 +7,19 @@ namespace Tyuiu.GalimovaAS.Sprint4.Task3.V29.Lib
         {
             int rows = array.GetUpperBound(0) + 1;
             int columns = array.Length / rows;
-            int count = 1;
-            int columnToSum = 1;
+
+            int res = 1;
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
-                { }
-                count *= array[i, columnToSum];
+                {
+                    if (j == 1)
+                    {
+                        res *= array[i, j];
+                    }
+                }
             }
-            return count;
+            return res;
         }
     }
 }
